@@ -4,10 +4,10 @@ finder with quickfix for nvim
 
 ## Install インストール
 
-clone
+Clone (place it in your startup plugins or use `vim.pack.add`).
 
 ```
-cd ~/.config/nvim/lua/
+cd ~/.config/nvim/pack/xxx/start/
 git clone https://github.com/446r/nvim-quick-finder.git
 ```
 
@@ -17,7 +17,7 @@ init.lua
 require("nvim-quick-finder").setup()
 ```
 
-customize
+Customize.
 
 ```
 require("nvim-quick-finder").setup({
@@ -34,5 +34,14 @@ require("nvim-quick-finder").setup({
 
 -> nvim opens QuickFix with list of files.
 
+
+## Ex command
+
+覚えやすいの、使いやすいのをsetupで指定してください。
+
+- Qf キーワード 場所 ... QuickFix + finder (default)
+- Ff キーワード 場所 ... Fuzzy finder
+- Ex キーワード 場所 ... netrw乗っ取り
+- Glob キーワード 場所 ... globっぽいもの
 
 
